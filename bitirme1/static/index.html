@@ -1,4 +1,40 @@
-<html>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>ARP Network Graph</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Anasayfa</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link">Ağ Topolojisi <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/arp">Analizler</a>
+            </li>
+           
+              
+            </li>
+           
+          </ul>
+          
+        </div>
+      </nav>
+        <div class="container">
+    <html>
     <head>
         <meta charset="utf-8">
         
@@ -88,8 +124,8 @@
                   
 
                   // parsing and collecting nodes and edges from the python
-                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": "172.20.10.2", "label": "172.20.10.2\n08:00:27:84:44:3f", "shape": "dot"}, {"color": "#97c2fc", "id": "172.20.10.4", "label": "172.20.10.4\n08:00:27:b6:ca:8d", "shape": "dot"}, {"color": "#97c2fc", "id": "172.20.10.5", "label": "172.20.10.5\n98:8d:46:b2:4b:07", "shape": "dot"}, {"color": "#97c2fc", "id": "172.20.10.6", "label": "172.20.10.6\n08:00:27:08:47:5a", "shape": "dot"}, {"color": "#97c2fc", "id": "172.20.10.7", "label": "172.20.10.7\n08:00:27:95:bd:54", "shape": "dot"}, {"color": "#97c2fc", "id": "172.20.10.1", "label": "172.20.10.1\nba:f1:2a:c9:f7:64", "shape": "dot"}, {"color": "red", "id": "switch", "label": "33:33:00:00:00:fb", "shape": "square", "title": "switch"}, {"color": "green", "id": "default_gateway", "label": "172.20.10.1", "shape": "dot", "title": "default gateway"}, {"color": "yellow", "id": "cloud", "label": "cloud", "shape": "rectangle", "title": "cloud"}, {"color": "#97c2fc", "id": "239.255.255.250", "label": "239.255.255.250", "shape": "dot"}, {"color": "#97c2fc", "id": "34.160.144.191", "label": "34.160.144.191", "shape": "dot"}, {"color": "#97c2fc", "id": "212.252.126.72", "label": "212.252.126.72", "shape": "dot"}, {"color": "#97c2fc", "id": "34.107.243.93", "label": "34.107.243.93", "shape": "dot"}, {"color": "#97c2fc", "id": "142.250.187.170", "label": "142.250.187.170", "shape": "dot"}, {"color": "#97c2fc", "id": "34.107.221.82", "label": "34.107.221.82", "shape": "dot"}, {"color": "#97c2fc", "id": "34.149.100.209", "label": "34.149.100.209", "shape": "dot"}, {"color": "#97c2fc", "id": "142.251.140.67", "label": "142.251.140.67", "shape": "dot"}, {"color": "#97c2fc", "id": "142.251.140.46", "label": "142.251.140.46", "shape": "dot"}, {"color": "#97c2fc", "id": "142.251.141.54", "label": "142.251.141.54", "shape": "dot"}, {"color": "#97c2fc", "id": "216.58.213.106", "label": "216.58.213.106", "shape": "dot"}, {"color": "#97c2fc", "id": "172.217.169.131", "label": "172.217.169.131", "shape": "dot"}, {"color": "#97c2fc", "id": "74.125.206.84", "label": "74.125.206.84", "shape": "dot"}, {"color": "#97c2fc", "id": "52.88.195.36", "label": "52.88.195.36", "shape": "dot"}, {"color": "#97c2fc", "id": "172.217.20.66", "label": "172.217.20.66", "shape": "dot"}, {"color": "#97c2fc", "id": "172.217.17.132", "label": "172.217.17.132", "shape": "dot"}, {"color": "#97c2fc", "id": "142.251.140.3", "label": "142.251.140.3", "shape": "dot"}, {"color": "#97c2fc", "id": "216.58.212.10", "label": "216.58.212.10", "shape": "dot"}, {"color": "#97c2fc", "id": "172.217.17.230", "label": "172.217.17.230", "shape": "dot"}, {"color": "#97c2fc", "id": "142.250.187.131", "label": "142.250.187.131", "shape": "dot"}, {"color": "#97c2fc", "id": "172.217.17.110", "label": "172.217.17.110", "shape": "dot"}, {"color": "#97c2fc", "id": "224.0.0.251", "label": "224.0.0.251", "shape": "dot"}, {"color": "#97c2fc", "id": "172.217.17.131", "label": "172.217.17.131", "shape": "dot"}, {"color": "#97c2fc", "id": "172.217.17.226", "label": "172.217.17.226", "shape": "dot"}, {"color": "#97c2fc", "id": "216.58.212.34", "label": "216.58.212.34", "shape": "dot"}, {"color": "#97c2fc", "id": "142.251.141.46", "label": "142.251.141.46", "shape": "dot"}]);
-                  edges = new vis.DataSet([{"from": "172.20.10.2", "to": "switch"}, {"from": "172.20.10.4", "to": "switch"}, {"from": "172.20.10.5", "to": "switch"}, {"from": "172.20.10.6", "to": "switch"}, {"from": "172.20.10.7", "to": "switch"}, {"from": "172.20.10.1", "to": "switch"}, {"from": "switch", "to": "default_gateway"}, {"from": "cloud", "to": "default_gateway"}, {"from": "cloud", "to": "239.255.255.250"}, {"from": "cloud", "to": "34.160.144.191"}, {"from": "cloud", "to": "212.252.126.72"}, {"from": "cloud", "to": "34.107.243.93"}, {"from": "cloud", "to": "142.250.187.170"}, {"from": "cloud", "to": "34.107.221.82"}, {"from": "cloud", "to": "34.149.100.209"}, {"from": "cloud", "to": "142.251.140.67"}, {"from": "cloud", "to": "142.251.140.46"}, {"from": "cloud", "to": "142.251.141.54"}, {"from": "cloud", "to": "216.58.213.106"}, {"from": "cloud", "to": "172.217.169.131"}, {"from": "cloud", "to": "74.125.206.84"}, {"from": "cloud", "to": "52.88.195.36"}, {"from": "cloud", "to": "172.217.20.66"}, {"from": "cloud", "to": "172.217.17.132"}, {"from": "cloud", "to": "142.251.140.3"}, {"from": "cloud", "to": "216.58.212.10"}, {"from": "cloud", "to": "172.217.17.230"}, {"from": "cloud", "to": "142.250.187.131"}, {"from": "cloud", "to": "172.217.17.110"}, {"from": "cloud", "to": "224.0.0.251"}, {"from": "cloud", "to": "172.217.17.131"}, {"from": "cloud", "to": "172.217.17.226"}, {"from": "cloud", "to": "216.58.212.34"}, {"from": "cloud", "to": "142.251.141.46"}]);
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": "172.20.10.2", "label": "172.20.10.2\n08:00:27:84:44:3f", "shape": "dot"}, {"color": "#97c2fc", "id": "172.20.10.4", "label": "172.20.10.4\n08:00:27:b6:ca:8d", "shape": "dot"}, {"color": "#97c2fc", "id": "172.20.10.5", "label": "172.20.10.5\n98:8d:46:b2:4b:07", "shape": "dot"}, {"color": "#97c2fc", "id": "172.20.10.6", "label": "172.20.10.6\n08:00:27:08:47:5a", "shape": "dot"}, {"color": "#97c2fc", "id": "172.20.10.7", "label": "172.20.10.7\n08:00:27:95:bd:54", "shape": "dot"}, {"color": "#97c2fc", "id": "172.20.10.1", "label": "172.20.10.1\nba:f1:2a:c9:f7:64", "shape": "dot"}, {"color": "pink", "id": "switch", "label": "33:33:00:00:00:fb", "shape": "square", "title": "switch"}, {"color": "purple", "id": "default_gateway", "label": "172.20.10.1", "shape": "dot", "title": "default gateway"}, {"color": "yellow", "id": "internet", "label": "internet", "shape": "rectangle", "title": "internet"}, {"color": "#97c2fc", "id": "239.255.255.250", "label": "239.255.255.250", "shape": "dot"}, {"color": "#97c2fc", "id": "34.160.144.191", "label": "34.160.144.191", "shape": "dot"}, {"color": "#97c2fc", "id": "212.252.126.72", "label": "212.252.126.72", "shape": "dot"}, {"color": "#97c2fc", "id": "34.107.243.93", "label": "34.107.243.93", "shape": "dot"}, {"color": "#97c2fc", "id": "142.250.187.170", "label": "142.250.187.170", "shape": "dot"}, {"color": "#97c2fc", "id": "34.107.221.82", "label": "34.107.221.82", "shape": "dot"}, {"color": "#97c2fc", "id": "34.149.100.209", "label": "34.149.100.209", "shape": "dot"}, {"color": "#97c2fc", "id": "142.251.140.67", "label": "142.251.140.67", "shape": "dot"}, {"color": "#97c2fc", "id": "142.251.140.46", "label": "142.251.140.46", "shape": "dot"}, {"color": "#97c2fc", "id": "142.251.141.54", "label": "142.251.141.54", "shape": "dot"}, {"color": "#97c2fc", "id": "216.58.213.106", "label": "216.58.213.106", "shape": "dot"}, {"color": "#97c2fc", "id": "172.217.169.131", "label": "172.217.169.131", "shape": "dot"}, {"color": "#97c2fc", "id": "74.125.206.84", "label": "74.125.206.84", "shape": "dot"}, {"color": "#97c2fc", "id": "52.88.195.36", "label": "52.88.195.36", "shape": "dot"}, {"color": "#97c2fc", "id": "172.217.20.66", "label": "172.217.20.66", "shape": "dot"}, {"color": "#97c2fc", "id": "172.217.17.132", "label": "172.217.17.132", "shape": "dot"}, {"color": "#97c2fc", "id": "142.251.140.3", "label": "142.251.140.3", "shape": "dot"}, {"color": "#97c2fc", "id": "216.58.212.10", "label": "216.58.212.10", "shape": "dot"}, {"color": "#97c2fc", "id": "172.217.17.230", "label": "172.217.17.230", "shape": "dot"}, {"color": "#97c2fc", "id": "142.250.187.131", "label": "142.250.187.131", "shape": "dot"}, {"color": "#97c2fc", "id": "172.217.17.110", "label": "172.217.17.110", "shape": "dot"}, {"color": "#97c2fc", "id": "224.0.0.251", "label": "224.0.0.251\n_airplay._tcp.local.", "shape": "dot", "title": "_airplay._tcp.local."}, {"color": "#97c2fc", "id": "172.217.17.131", "label": "172.217.17.131", "shape": "dot"}, {"color": "#97c2fc", "id": "172.217.17.226", "label": "172.217.17.226", "shape": "dot"}, {"color": "#97c2fc", "id": "216.58.212.34", "label": "216.58.212.34", "shape": "dot"}, {"color": "#97c2fc", "id": "142.251.141.46", "label": "142.251.141.46", "shape": "dot"}]);
+                  edges = new vis.DataSet([{"from": "172.20.10.2", "to": "switch"}, {"from": "172.20.10.4", "to": "switch"}, {"from": "172.20.10.5", "to": "switch"}, {"from": "172.20.10.6", "to": "switch"}, {"from": "172.20.10.7", "to": "switch"}, {"from": "172.20.10.1", "to": "switch"}, {"from": "switch", "to": "default_gateway"}, {"from": "internet", "to": "default_gateway"}, {"from": "internet", "to": "239.255.255.250"}, {"from": "internet", "to": "34.160.144.191"}, {"from": "internet", "to": "212.252.126.72"}, {"from": "internet", "to": "34.107.243.93"}, {"from": "internet", "to": "142.250.187.170"}, {"from": "internet", "to": "34.107.221.82"}, {"from": "internet", "to": "34.149.100.209"}, {"from": "internet", "to": "142.251.140.67"}, {"from": "internet", "to": "142.251.140.46"}, {"from": "internet", "to": "142.251.141.54"}, {"from": "internet", "to": "216.58.213.106"}, {"from": "internet", "to": "172.217.169.131"}, {"from": "internet", "to": "74.125.206.84"}, {"from": "internet", "to": "52.88.195.36"}, {"from": "internet", "to": "172.217.20.66"}, {"from": "internet", "to": "172.217.17.132"}, {"from": "internet", "to": "142.251.140.3"}, {"from": "internet", "to": "216.58.212.10"}, {"from": "internet", "to": "172.217.17.230"}, {"from": "internet", "to": "142.250.187.131"}, {"from": "internet", "to": "172.217.17.110"}, {"from": "internet", "to": "224.0.0.251"}, {"from": "internet", "to": "172.217.17.131"}, {"from": "internet", "to": "172.217.17.226"}, {"from": "internet", "to": "216.58.212.34"}, {"from": "internet", "to": "142.251.141.46"}]);
 
                   nodeColors = {};
                   allNodes = nodes.get({ returnType: "Object" });
@@ -152,4 +188,4 @@
               drawGraph();
         </script>
     </body>
-</html>
+</html></div></body></html>
